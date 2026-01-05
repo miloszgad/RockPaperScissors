@@ -41,8 +41,8 @@ function playRound(humanChoice, computerChoice) {
     } else {
         alert("Incorrect word")
     }
-         
-    }
+
+}
 
     
 
