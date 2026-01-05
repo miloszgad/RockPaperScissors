@@ -44,18 +44,30 @@ function playRound(humanChoice, computerChoice) {
          
     }
 
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
-
-    playRound(humanSelection, computerSelection);
-     
-    function playGame() {
-        
-        
-}
+    
 
 
     
+     
+    function playGame() {
+       for (let i = 0; i < 5 ; i++) {
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+         playRound(humanSelection, computerSelection);
+    }
+    if (humanScore > computerScore) {
+        alert("Congratulations!!! You have won a game") ;
+    } else if (humanScore < computerScore) {
+        alert("Unfortunately you have lost.");
+    } else if (humanScore === computerScore) {
+        alert("A draw. It was a really good game!");
+    } 
+}
 
+playGame()     
+
+
+
+    
 
 
